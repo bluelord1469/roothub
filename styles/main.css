@@ -16,6 +16,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -130,6 +134,7 @@ nav ul a{
    right: 8px;
    height: 2px;
    background: #0DBE3E;
+   box-shadow: 0 0 7px 0 #009945;
 }
 
 .nav-toggle span:before, .nav-toggle span:after {
@@ -140,6 +145,7 @@ nav ul a{
    width: 100%;
    height: 2px;
    background: #0DBE3E;
+   box-shadow: 0 0 7px 0 #009945;
 }
 
 .nav-toggle span:before {
