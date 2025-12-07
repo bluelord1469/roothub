@@ -128,7 +128,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 786px){
+@media screen and (max-width: 768px){
     .terminal{
         font-size: 20px;
     }

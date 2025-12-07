@@ -85,7 +85,7 @@
     border: solid 3px #0dbe3e;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
     .grid-container{
         grid-template-columns: 1fr 1fr;
         max-width: 600px;

@@ -199,9 +199,9 @@ footer{
     box-shadow: 0 0 7px #009945;
 }
 
-@media screen and (max-width: 786px){
+@media screen and (max-width: 768px){
     body{
-        max-width: 786px;
+        max-width: 768px;
     }
 
     .nav-toggle {
