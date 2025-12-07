@@ -164,7 +164,7 @@
 
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 375px){
     .terminal{
         font-size: 12px;
     }
