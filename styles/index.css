@@ -152,6 +152,47 @@
    margin: 0 auto;
 }
 
+.facts {
+    margin: 50px 30px 0 30px;
+}
+
+.fact {
+    margin-bottom: 10px;
+}
+
+.fact-title {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+}
+
+.fact-title::before {
+    content: '>';
+    margin-right: 15px;
+    color: #0dbe3e;
+    text-shadow: 0 0 7px #009945;
+    transition: transform 0.3s;
+}
+
+.fact-title.active-fact::before {
+    content: '>';
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+
+.fact-content {
+    padding: 0 37px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.fact-content.fact-opened {
+    max-height: 300px;
+}
+
 @media screen and (max-width: 768px){
     .terminal{
         font-size: 20px;
@@ -230,5 +271,18 @@
 
     .whoami{
         margin: 10px auto;
+    }
+
+    .fact-title {
+        font-size: 12px;
+    }
+
+    .fact-content {
+        font-size: 11px;
+        padding: 0 33px;
+    }
+
+    .facts {
+        margin: 10px 20px 0 20px;
     }
 }
