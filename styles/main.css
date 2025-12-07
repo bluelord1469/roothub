@@ -257,14 +257,14 @@ footer{
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (min-width: 320px) and (max-width: 767px){
     body{
         max-width: 375px;
         font-size: 11px;
     }
 
     header{
-        padding: 0px 50px;
+        padding: 0px 15px;
     }
 
     #menu li a{
@@ -284,7 +284,7 @@ footer{
     }
 
     footer{
-        padding: 0px 50px;
+        padding: 0px 15px;
     }
     
     h2{
