@@ -227,6 +227,18 @@
         flex-direction: column;
     }
 
+    .system-message-content div{
+        align-items: center;
+    }
+
+    .system-message-content p{
+        text-align: center;
+    }
+
+    .system-message-content img{
+        height: 250px;
+        width: 250px;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px){
@@ -284,5 +296,26 @@
 
     .facts {
         margin: 10px 20px 0 20px;
+    }
+
+    .system-message-content img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .system-message-top img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .system-message-content p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .btn-join{
+        font-size: 12px;
+        width: 260px;
+        height: 75px;
     }
 }
