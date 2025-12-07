@@ -199,7 +199,7 @@ footer{
     box-shadow: 0 0 7px #009945;
 }
 
-@media screen and (min-width: 786px) and (max-width: 992px){
+@media screen and (max-width: 786px){
     body{
         max-width: 786px;
     }

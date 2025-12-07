@@ -64,7 +64,7 @@
     background-position: center;
 }
 
-@media screen and (min-width: 786px) and (max-width: 992px) {
+@media screen and (max-width: 786px) {
     .grid-container{
         grid-template-columns: 1fr 1fr;
         max-width: 600px;
