@@ -231,8 +231,7 @@ footer{
 
     section{
         margin: 10px auto 80px auto;
-        min-width: 720px;
-        max-width: 950px;
+        max-width: 720px;
     }
 
     .footer-block{
@@ -260,12 +259,12 @@ footer{
 
 @media screen and (min-width: 320px) and (max-width: 767px){
     body{
-        max-width: 320px;
+        max-width: 375px;
         font-size: 11px;
     }
 
     header{
-        padding: 0px 20px;
+        padding: 0px 50px;
     }
 
     #menu li a{
@@ -285,7 +284,7 @@ footer{
     }
 
     footer{
-        padding: 0px 20px;
+        padding: 0px 50px;
     }
     
     h2{
@@ -300,8 +299,7 @@ footer{
 
     section{
         margin: 10px auto 50px auto;
-        min-width: 300px;
-        max-width: 740px;
+        max-width: 300px;
     }
 
     .footer-block {
