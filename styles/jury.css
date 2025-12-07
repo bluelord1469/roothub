@@ -1,0 +1,112 @@
+.jury{
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.grid-container {
+    margin: 50px auto 0 auto;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.jury-card-purple, .jury-card-green {
+    position: relative; 
+    width: 288px; 
+    height: 385px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jury-card-purple p, .jury-card-green p{
+    margin-top: 35px;
+    margin-right: 5px;
+}
+
+.jury-border-purple img, .jury-border-green img{
+    width: 180px;
+    height: 180px;
+    margin-top: 80px;
+}
+
+.jury-card-purple {
+    background-image: url(../images/purple-border.png);
+}
+
+.jury-card-green {
+    background-image: url(../images/green-border.png);
+}
+
+.jury-border-purple{
+    background-image: url(../images/small-purple-border.png);
+}
+
+.jury-border-green{
+    background-image: url(../images/small-green-border.png);
+}
+
+.jury-border-purple, .jury-border-green{
+    position: relative; 
+    width: 230px; 
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 786px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+    }
+
+    .jury-card-purple p, .jury-card-green p{
+        margin-left: 7px;
+        margin-top: 40px;
+    }
+
+    .jury{
+        width: 719px;
+    }
+}
+
+@media screen and (max-width: 375px) {   
+    .grid-container {
+        max-width: 300px;
+        grid-template-columns: 1fr;
+    }
+    
+    .jury-card-purple, .jury-card-green {
+        width: 100%;
+        max-width: 288px;
+        height: 385px;
+    }
+    
+    .jury-card-purple p, .jury-card-green p{
+        margin-right: 15px;
+        margin-top: 40px;
+    }
+    
+    .jury-border-purple, .jury-border-green {
+        width: 230px;
+        height: 230px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+
+    .jury{
+        width: 286px;
+    }
+}

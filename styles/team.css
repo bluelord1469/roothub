@@ -1,0 +1,153 @@
+.team{
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.grid-container {
+    margin: 50px auto 0 auto;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.team-card-purple, .team-card-green {
+    position: relative; 
+    width: 288px; 
+    height: 385px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.team-card-purple p, .team-card-green p{
+    margin-top: 35px;
+    margin-right: 5px;
+}
+
+.team-border-purple img, .team-border-green img{
+    width: 180px;
+    height: 180px;
+    margin-top: 157px;
+}
+
+.team-card-purple {
+    background-image: url(../images/purple-border.png);
+}
+
+.team-card-green {
+    background-image: url(../images/green-border.png);
+}
+
+.team-border-purple{
+    background-image: url(../images/small-purple-border.png);
+}
+
+.team-border-green{
+    background-image: url(../images/small-green-border.png);
+}
+
+.team-border-purple, .team-border-green{
+    position: relative; 
+    width: 230px; 
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.achievements-purple img{
+    width: 41px;
+    height: 41px;
+    margin: 10px 26px 12px 0;
+    box-shadow: 0 0 7px #6e3ce9;
+    border: solid 3px #ac8ef6;
+}
+
+.achievements-green, .achievements-purple{
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievements-green img{
+    width: 41px;
+    height: 41px;
+    margin: 10px 26px 12px 0;
+    box-shadow: 0 0 7px #009945;
+    border: solid 3px #0dbe3e;
+}
+
+@media screen and (max-width: 786px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+    }
+
+    .team-card-purple p, .team-card-green p{
+        margin-left: 7px;
+        margin-top: 41px;
+    }
+
+    .achievements-purple img,
+    .achievements-green img {
+        width: 40px;
+        height: 40px;
+        margin: 8px 13px 10px 0;
+    }
+    
+    .achievements-purple,
+    .achievements-green {
+        gap: 15px;
+    }
+
+    .team{
+        width: 719px;
+    }
+}
+
+@media screen and (max-width: 375px) {   
+    .grid-container {
+        max-width: 300px;
+        grid-template-columns: 1fr;
+    }
+    
+    .team-card-purple, .team-card-green {
+        width: 100%;
+        max-width: 288px;
+        height: 385px;
+    }
+    
+    .team-card-purple p, .team-card-green p{
+        margin-right: 15px;
+        margin-top: 30px;
+    }
+    
+    .team-border-purple, .team-border-green {
+        width: 230px;
+        height: 230px;
+    }
+    
+    .achievements-purple img,
+    .achievements-green img {
+        width: 38px;
+        height: 38px;
+        margin: 8px 20px 10px 0;
+    }
+    
+    .achievements-purple,
+    .achievements-green {
+        justify-content: center;
+    }
+
+    .team{
+        width: 286px;
+    }
+}
