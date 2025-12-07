@@ -259,7 +259,7 @@ footer{
 
 @media screen and (max-width: 576px){
     body{
-        max-width: 576px;
+        max-width: 375px;
         font-size: 11px;
     }
 
