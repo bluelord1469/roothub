@@ -243,7 +243,7 @@ footer{
 
     section{
         margin: 10px auto 80px auto;
-        max-width: 720px;
+        width: 720px;
     }
 
     .footer-block{
