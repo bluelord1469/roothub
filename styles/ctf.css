@@ -72,6 +72,67 @@
     height: 50px;
 }
 
+.ctf-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    padding: 0 120px;
+}
+
+.information{
+    position: relative;
+    width: 600px;
+}
+
+.information-block{
+    backdrop-filter: blur(4px);
+    background: rgba(0, 153, 69, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information-border{
+    border-bottom: 3px solid #0dbe3e;
+    box-shadow: 0 0 7px 0 #009945;
+}
+
+.information-border-side{
+    border-left: 3px solid #0dbe3e;
+    box-shadow: 0 0 7px 0 #009945;
+    height: stretch;
+}
+
+.information-block p{
+    padding: 25px 49px 50px 49px;
+}
+
+.information-title, .score-title{
+    z-index: 1000;
+    position: absolute;
+    margin-top: -18px;
+}
+
+.information-title{
+    margin-left: 40px;
+}
+
+.scores{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+}
+
 @media screen and (max-width: 768px){
     .terminal{
         font-size: 20px;
@@ -92,7 +153,21 @@
     }
 
     .ctf{
-        padding: 0px 60px;
+        padding: 30px 60px;
+    }
+
+    .ctf-profile{
+        margin: 40px auto;
+    }
+
+    .ctf-info{
+        flex-direction: column;
+        margin-top: 70px;
+        padding: 0 120px;
+    }
+
+    .scores{
+        margin-top: 60px;
     }
 
 }
@@ -115,10 +190,17 @@
         font-size: 7px;
         line-height: 8px;
         align-self: center;
+        margin: 15px 0;
     }
 
     .terminal-block{
-        padding: 3px 10px;
+        padding: 10px;
+    }
+
+    .terminal-block p{
+        line-height: 16px;
+        text-wrap: wrap;
+        width: 248px;
     }
 
     .terminal-top div p{
@@ -126,23 +208,47 @@
     }
 
     .ctf, .ctf-profile{
-        padding: 0px 8px;
+        align-items: center;
     }
 
     .ctf p, .ctf-profile p{
-        line-height: 15px;
+        line-height: 20px;
+        text-align: center;
+        text-wrap: wrap;
+        width: 180px;
+    }
+
+    .ctf{
+        padding: 10px 0 20px 0;
     }
 
     .ctf-profile{
-        margin: 10px auto;
+        margin: 20px auto;
     }
 
     .ctf-profile img{
-        width: 150px;
-        height: 20px;
+        width: 200px;
+        height: 25px;
     }
 
     .ctf-profile p{
         margin: 0 auto;
+    }
+
+    .information{
+        width: 290px;
+    }
+
+    .information-block p{
+        padding: 25px 49px;
+    }
+
+    .ctf-info{
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .score-list{
+        width: 230px;
     }
 }
