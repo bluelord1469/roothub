@@ -21,6 +21,7 @@ html {
 }
 
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     transition: .3s ease-in-out;
@@ -270,7 +271,7 @@ footer{
 
 @media screen and (min-width: 320px) and (max-width: 767px){
     body{
-        max-width: 375px;
+        max-width: 320px;
         font-size: 12px;
     }
 
