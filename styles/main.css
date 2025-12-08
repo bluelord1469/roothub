@@ -229,7 +229,7 @@ footer{
     }
 
     header{
-        padding: 0px 30px;
+        padding: 10px 30px;
     }
 
     header .logo{
@@ -276,7 +276,7 @@ footer{
     }
 
     header{
-        padding: 0px;
+        padding: 10px 0 5px 0;
     }
 
     #menu li a{
