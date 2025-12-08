@@ -407,4 +407,9 @@
     #helper-info p{
         width: 250px;
     }
+
+    #helper-info img{
+        width: 120px;
+        height: 160px;
+    }
 }
