@@ -171,12 +171,13 @@ nav ul a{
 }
 
 .btn-reg{
-    background: url(../images/btn-reg-border.svg);
+    background: url(../images/btn-reg-border.png);
     background-size: cover;
+    background-position: center;
     font-size: 16px;
     margin: 0 0 0 30px;
-    width: 219px;
-    height: 43px;
+    width: 250px;
+    height: 50px;
     cursor: pointer;
     display: flex;
     justify-content: center;
