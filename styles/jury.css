@@ -30,13 +30,11 @@
     margin: 5px 0 0 0;
 }
 
-.jury-info{
-    font-size: 12px;
-}
-
-.jury-border-purple img, .jury-border-green img{
-    width: 170px;
-    height: 170px;
+.jury-img{
+    width: 162px;
+    height: 162px;
+    background-position: center;
+    background-size: cover;
 }
 
 .jury-card-purple {
@@ -96,9 +94,9 @@
         width: 160px;
     }
 
-    .jury-border-purple img, .jury-border-green img{
-        width: 130px;
-        height: 130px;
+    .jury-img{
+        width: 135px;
+        height: 135px;
     }
     
     h2{

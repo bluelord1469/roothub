@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const tooltipData = {
         'Front.png': 'FRONTEND - Разработка интерфейса',
-        'Back.png': 'BACKEND - Серверная часть',
+        'Back.png': 'BACKEND - Разработка тасков',
         'Boss.png': 'TEAM LEAD - Руководитель команды',
         'design_ach.svg': 'ДИЗАЙН - Графический дизайн',
-        'legend_ach.svg': 'ЛЕГЕНДА - Опытный специалист',
-        'maskot_ach.svg': 'МАСКОТ - Душа команды'
+        'legend_ach.svg': 'ЛЕГЕНДА - То, с чего всё началось...',
+        'maskot_ach.svg': 'МАСКОТ - Концепты главных героев легенды'
     };
     
     const achievementsBlocks = document.querySelectorAll('.achievements-purple, .achievements-green');
