@@ -16,6 +16,7 @@
 .jury-card-purple, .jury-card-green {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-size: cover;
     background-position: center;
@@ -62,7 +63,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 15px;
+    margin-top: -15px;
 }
 
 @media screen and (max-width: 768px) {
