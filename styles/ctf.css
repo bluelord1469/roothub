@@ -236,8 +236,9 @@
 }
 
 #helper-info p{
-    width: 300px;
+    width: 350px;
     height: 100px;
+    margin-top: 10px;
     text-align: center;
 }
 

@@ -17,7 +17,7 @@ document.querySelectorAll('.helper').forEach(helper => {
             
             document.querySelector('#help').classList.add('ron-mode');
             document.querySelector('#helper-info img').src = '../images/ron.png';
-            document.querySelector('#helper-info p').textContent = '...';
+            document.querySelector('#helper-info p').textContent = 'Дайте мне нормальное описание';
         } 
         else {
             spans[0].textContent = 'С.Е.Р.Ч';
@@ -27,7 +27,7 @@ document.querySelectorAll('.helper').forEach(helper => {
             
             document.querySelector('#help').classList.remove('ron-mode');
             document.querySelector('#helper-info img').src = '../images/search.png';
-            document.querySelector('#helper-info p').textContent = 'Запомни - байт это байт, а бит - это не байт.';
+            document.querySelector('#helper-info p').textContent = 'Запомни: байт - это байт, а бит - это не байт.';
         }
     });
 });
