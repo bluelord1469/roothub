@@ -35,7 +35,6 @@ function initComic() {
     prevBtn.addEventListener('click', goToPrevPage);
     nextBtn.addEventListener('click', goToNextPage);
     document.addEventListener('keydown', handleKeyPress);
-    setupTouchEvents();
 }
 
 function goToPrevPage() {
@@ -98,33 +97,6 @@ function handleKeyPress(event) {
         const pageNum = parseInt(event.key);
         if (pageNum <= totalPages) {
             goToPage(pageNum);
-        }
-    }
-}
-
-function setupTouchEvents() {
-    let touchStartX = 0;
-    let touchEndX = 0;
-    
-    comicContainer.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-    });
-    
-    comicContainer.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
-    
-    function handleSwipe() {
-        const swipeThreshold = 50;
-        const diff = touchStartX - touchEndX;
-        
-        if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0) {
-                goToNextPage();
-            } else {
-                goToPrevPage();
-            }
         }
     }
 }
