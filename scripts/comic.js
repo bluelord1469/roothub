@@ -51,15 +51,38 @@ function goToNextPage() {
 }
 
 
+function goToPage(pageNumber) {
+    if (pageNumber < 1 || pageNumber > totalPages) return;
+    document.querySelectorAll('.comic-page').forEach(page => {
+        page.classList.remove('active');
+    });
+    
+    currentPage = pageNumber;
+    updateComicDisplay();
+}
+
 function updateComicDisplay() {
     const currentPageElement = document.getElementById(`page-${currentPage}`);
     if (currentPageElement) {
         currentPageElement.classList.add('active');
     }
-
+    
     prevBtn.disabled = currentPage === 1;
     nextBtn.disabled = currentPage === totalPages;
     currentPageSpan.textContent = currentPage;
+    preloadAdjacentPages();
+}
+
+function preloadAdjacentPages() {
+    if (currentPage < totalPages) {
+        const nextImg = document.querySelector(`#page-${currentPage + 1} img`);
+        if (nextImg) nextImg.loading = 'eager';
+    }
+    
+    if (currentPage > 1) {
+        const prevImg = document.querySelector(`#page-${currentPage - 1} img`);
+        if (prevImg) prevImg.loading = 'eager';
+    }
 }
 
 function handleKeyPress(event) {
