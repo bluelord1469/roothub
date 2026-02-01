@@ -243,7 +243,6 @@
 }
 
 .rules{
-    margin: 0 auto;
     backdrop-filter: blur(4px);
     box-shadow: 0 0 7px 0 #009945;
     background: rgba(0, 153, 69, 0.05);
@@ -279,6 +278,64 @@
 
 .rules-top h2{
     font-size: 32px;
+}
+
+.comic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 0;
+}
+
+.comic-container {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.comic-page {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.comic-page.active {
+    display: block;
+}
+
+.comic-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Pixel';
+}
+
+.nav-btn:disabled {
+    display: none;
+}
+
+.page-counter {
+    font-size: 24px;
+    padding: 8px 16px;
 }
 
 @media screen and (max-width: 768px){
@@ -484,5 +541,17 @@
 
     .rules-top{
         padding: 20px 0;
+    }
+
+    .comic{
+        margin: 30px 0;
+    }
+
+    .nav-btn {
+        font-size: 20px;
+    }
+
+    .page-counter {
+        font-size: 20px;
     }
 }
