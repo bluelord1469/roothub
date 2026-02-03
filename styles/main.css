@@ -212,6 +212,12 @@ footer{
     box-shadow: 0 0 7px #009945;
 }
 
+.purple-container-line{
+    width: stretch;
+    border-top: solid 3px #AC8EF6;
+    box-shadow: 0 0 7px #6E3CE9;
+}
+
 @media screen and (max-width: 768px){
     body{
         width: 768px;

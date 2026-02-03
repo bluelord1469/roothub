@@ -8,12 +8,6 @@
     font-size: 20px;
 }
 
-.purple-container-line{
-    width: stretch;
-    border-top: 3px solid #ac8ef6;
-    box-shadow: 0 0 15px 0 #6e3ce9;
-}
-
 .terminal-top{
     display: flex;
     flex-direction: column;

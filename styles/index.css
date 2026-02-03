@@ -106,9 +106,9 @@
 .system-message{
     margin: 0 auto;
     backdrop-filter: blur(4px);
-    box-shadow: 0 0 7px 0 #009945;
-    background: rgba(0, 153, 69, 0.05);
-    border: 3px solid #0dbe3e;
+    box-shadow: 0 0 7px 0 #6E3CE9;
+    background: rgba(110, 60, 233, 0.05);
+    border: 3px solid #AC8EF6;
     max-width: 1036px;
     padding-bottom: 20px;
 }
@@ -122,6 +122,12 @@
 
 .system-message-content-text{
     margin: 0 30px 0 0;
+}
+
+
+.system-message-content img{
+    height: 330px;
+    width: 330px;
 }
 
 .system-message-top{
@@ -144,7 +150,7 @@
 }
 
 .btn-join{
-    background: url(../images/join-btn.png);
+    background: url(../images/join-btn.svg);
     background-size: cover;
     display: flex;
     justify-content: center;

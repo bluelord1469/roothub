@@ -17,7 +17,7 @@ document.querySelectorAll('.helper').forEach(helper => {
             
             document.querySelector('#help').classList.add('ron-mode');
             document.querySelector('#helper-info img').src = '../images/ron.png';
-            document.querySelector('#helper-info p').textContent = 'Дайте мне нормальное описание';
+            document.querySelector('#helper-info p').textContent = 'Ты patched? Или просто ещё не exploited?';
         } 
         else {
             spans[0].textContent = 'С.Е.Р.Ч';
