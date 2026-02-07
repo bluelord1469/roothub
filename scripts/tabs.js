@@ -20,7 +20,7 @@ document.querySelectorAll('.helper').forEach(helper => {
             document.querySelector('#helper-info p').textContent = 'Ты patched? Или просто ещё не exploited?';
         } 
         else {
-            spans[0].textContent = 'С.Е.Р.Ч';
+            spans[0].textContent = 'СЁРЧ';
             spans[1].textContent = 'Робот';
             spans[2].textContent = '20';
             spans[3].textContent = '30';
