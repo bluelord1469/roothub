@@ -16,12 +16,13 @@
 .team-card-purple, .team-card-green {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 280px;
-    height: 380px;
+    width: 270px;
+    height: 370px;
 }
 
 .team-card-purple p, .team-card-green p{
@@ -62,43 +63,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 15px;
-}
-
-.achievements-purple img{
-    width: 41px;
-    height: 41px;
-    box-shadow: 0 0 7px #6e3ce9;
-    border: solid 3px #ac8ef6;
-    margin-right: 20px;
-}
-
-.achievements-green, .achievements-purple{
-    display: flex;
-    align-items: center;
-    width: 170px;
-    align-self: start;
-    margin-left: 45px;
-}
-
-.achievements-green img{
-    width: 41px;
-    height: 41px;
-    box-shadow: 0 0 7px #009945;
-    border: solid 3px #0dbe3e;
-    margin-right: 20px;
 }
 
 @media screen and (max-width: 768px) {
     .grid-container{
         grid-template-columns: 1fr 1fr;
         max-width: 600px;
-    }
-
-    .achievements-purple img,
-    .achievements-green img {
-        width: 40px;
-        height: 40px;
     }
 
     .team{
@@ -128,17 +98,6 @@
     .team-img{
         width: 135px;
         height: 135px;
-    }
-
-    .achievements-green, .achievements-purple{
-        width: 160px;
-        margin-left: 45px;
-    }
-    
-    .achievements-purple img,
-    .achievements-green img {
-        width: 35px;
-        height: 35px;
     }
         
     .team{
