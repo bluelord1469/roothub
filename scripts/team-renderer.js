@@ -20,41 +20,49 @@ class TeamRenderer {
     }
 
     getCardColor(index) {
-        const width = window.innerWidth;
+    const width = window.innerWidth;
+    
+    if (width > 768) {
+        const rowIndex = Math.floor(index / 4);
+        const colIndex = index % 4;
         
-        if (width > 768) {
-            const rowIndex = Math.floor(index / 4);
-            const colIndex = index % 4;
-            
-            if (rowIndex % 2 === 0) {
-                return this.startColor === 'purple' 
-                    ? (colIndex % 2 === 0 ? 'purple' : 'green')
-                    : (colIndex % 2 === 0 ? 'green' : 'purple');
-            } 
-            else {
-                return this.startColor === 'purple'
-                    ? (colIndex % 2 === 0 ? 'green' : 'purple')
-                    : (colIndex % 2 === 0 ? 'purple' : 'green');
-            }
-        } else if (width > 320 && width <= 768) {
-            const rowIndex = Math.floor(index / 2);
-            const colIndex = index % 2;
-            
-            if (rowIndex % 2 === 0) {
-                return this.startColor === 'purple'
-                    ? (colIndex === 0 ? 'purple' : 'green')
-                    : (colIndex === 0 ? 'green' : 'purple');
-            } 
-            else {
-                return this.startColor === 'purple'
-                    ? (colIndex === 0 ? 'green' : 'purple')
-                    : (colIndex === 0 ? 'purple' : 'green');
-            }
+        if (rowIndex % 2 === 0) {
+            return this.startColor === 'purple' 
+                ? (colIndex % 2 === 0 ? 'purple' : 'green')
+                : (colIndex % 2 === 0 ? 'green' : 'purple');
         } 
         else {
-            return index % 2 === 0 ? this.startColor : (this.startColor === 'purple' ? 'green' : 'purple');
+            return this.startColor === 'purple'
+                ? (colIndex % 2 === 0 ? 'green' : 'purple')
+                : (colIndex % 2 === 0 ? 'purple' : 'green');
+        }
+    } 
+    else if (width > 480 && width <= 768) {
+        const rowIndex = Math.floor(index / 2);
+        const colIndex = index % 2;
+        
+        if (rowIndex % 2 === 0) {
+            return this.startColor === 'purple'
+                ? (colIndex === 0 ? 'purple' : 'green')
+                : (colIndex === 0 ? 'green' : 'purple');
+        } 
+        else {
+            return this.startColor === 'purple'
+                ? (colIndex === 0 ? 'green' : 'purple')
+                : (colIndex === 0 ? 'purple' : 'green');
+        }
+    } 
+    else {
+        const rowIndex = index;
+        
+        if (rowIndex % 2 === 0) {
+            return this.startColor;
+        } 
+        else {
+            return this.startColor === 'purple' ? 'green' : 'purple';
         }
     }
+}
 
     createCard(member, color) {
         const card = document.createElement('div');
@@ -69,7 +77,7 @@ class TeamRenderer {
             imgDiv.style.backgroundImage = `url(../images/${member.image})`;
         } 
         else {
-            imgDiv.style.backgroundImage = `url(../images/default-avatar.jpg)`;
+            imgDiv.style.backgroundImage = `url(../images/)`;
         }
         
         borderDiv.appendChild(imgDiv);
